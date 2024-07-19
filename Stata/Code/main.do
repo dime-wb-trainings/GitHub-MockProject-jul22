@@ -8,8 +8,8 @@
 	* Set project global(s)	
 	// User 1
 	if "`c(username)'" == "wb558768" {
-        global onedrive "C:\Users\wb558768\WBG\Maria Ruth Jones - GitHub-Workflow-training"
-		global github 	"C:\Users\wb558768\Documents\GitHub\GitHub-MockProject"
+        global onedrive "C:/Users/wb558768/WBG/Maria Ruth Jones - GitHub-Workflow-training"
+		global github 	"C:/Users/wb558768/Documents/GitHub/GitHub-MockProject-jul22"
     }
 	
 	// User 2 
@@ -27,8 +27,6 @@
         global onedrive ""
 		global github 	""
     }
-	
-	
 	
 	
 	* Set globals for sub-folders 
@@ -51,7 +49,6 @@
 	* Switch to 0/1 to not-run/run do-files 
 	if (1) do "${code}/01-processing-data.do"
 	if (1) do "${code}/02-data-construction.do"
-	if (1) do "${code}/03-analysis.do"
 	
 
 * End of do-file!	

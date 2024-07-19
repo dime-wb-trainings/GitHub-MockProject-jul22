@@ -19,6 +19,7 @@ quick_xlsx(
   summary_stats,
   file = here(
     "Outputs",
+    "Tables",
     "summary-stats-1.xlsx"
   )
 )
@@ -36,6 +37,7 @@ ALB_ES_constructed %>%
   summarise(across(all_of(sum_vars), list(mean = mean, median = median, sd = sd, min = min, max = max, n = ~sum(!is.na(.))))) %>%
   writexl::write_xlsx(path = here(
     "Outputs",
+    "Tables",
     "summary-stats-2.xlsx"
   ))
 
@@ -80,6 +82,7 @@ reg_table <- huxreg(reg1, reg2, reg3,
 # Export to Excel
 quick_xlsx(reg_table,  file = here(
    "Outputs",
+   "Tables",
   "regression-1.xlsx"))
 
 # Graphs

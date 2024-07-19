@@ -15,7 +15,9 @@ packages <- c("here", # to manage file paths
               "huxtable", # save to excel
               "forcats", # for factor manipulation
               "assertthat", # review coding
-              "ggpubr") # combining and arranging plots
+              "ggpubr",
+              "openxlsx",
+              "writexl") # combining and arranging plots
 
 
 pacman::p_load(packages,
@@ -37,4 +39,3 @@ data_path <- "C:/Users/wb614536/OneDrive - WBG/Documents/GithubTraining/Data"
 # Source the R scripts in the correct order
 source("Code/01-processing-data.R")
 source("Code/02-data-construction.R")
-source("Code/03-analysis.R")

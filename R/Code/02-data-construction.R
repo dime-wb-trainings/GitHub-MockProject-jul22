@@ -59,7 +59,7 @@ ggplot(ALB_ES_financial, aes(y = profits_usd)) +
   geom_boxplot() 
 
 # Define the function
-winsor_function <- function(dataset, var, min = 0.00, max = 0.99){
+winsor_function <- function(dataset, var, min = 0.00, max = 0.95){
   var_sym <- sym(var)
   
   percentiles <- quantile(
@@ -80,7 +80,7 @@ winsor_function <- function(dataset, var, min = 0.00, max = 0.99){
     )
 }
 
-ALB_ES_financial <- winsor_function(ALB_ES_financial, "profits_usd", min = 0.01, max = 0.99)
+ALB_ES_financial <- winsor_function(ALB_ES_financial, "profits_usd", min = 0.01, max = 0.95)
 
 # plot histograms 
 
