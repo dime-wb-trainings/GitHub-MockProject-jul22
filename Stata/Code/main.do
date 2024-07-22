@@ -23,9 +23,9 @@
 	// User: you 
 	di "`c(username)'" 	//Check username and copy to set project globals by user
 	
-	if "`c(username)'" == "" {
-        global onedrive ""
-		global github 	""
+	if "`c(username)'" == "wb614536" {
+        global onedrive "C:/Users/wb614536/OneDrive - WBG/Documents/GithubTraining"
+		global github 	"C:/Users/wb614536/Github/GitHub-MockProject-jul22"
     }
 	
 	
