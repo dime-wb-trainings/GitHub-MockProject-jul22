@@ -49,6 +49,8 @@
 !/**/*.R
 !/**/*.Rmd
 !/**/*.Rproj
+!/**/renv.lock
+!/**/.Rprofile
 
 # LaTeX
 !/**/*.tex
