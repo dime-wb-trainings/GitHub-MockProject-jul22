@@ -42,6 +42,8 @@
 
 # Stata
 !/**/*.do
+!/Stata/Code/ado/*
+!/Stata/Code/ado/**/*
 
 # R
 !/**/*.R
