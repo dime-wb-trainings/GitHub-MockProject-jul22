@@ -51,6 +51,7 @@
 !/**/*.Rproj
 !/**/renv.lock
 !/**/.Rprofile
+!/**/renv/settings.json
 
 # LaTeX
 !/**/*.tex
@@ -98,3 +99,4 @@ password.*
 passwords.*
 password/
 passwords/
+.Rproj.user
