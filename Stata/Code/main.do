@@ -21,16 +21,17 @@
     }
 	
 	// User: you 
-	di "`c(username)'" 	//Check username and copy to set project globals by user
+	di "`wb623442'" 	//Check username and copy to set project globals by user
 	
-	if "`c(username)'" == "" {
-        global onedrive ""
-		global github 	""
+	if "`c(username)'" == "wb623442" {
+        global onedrive "C:\Users\wb623442\WBG(1)\Maria Ruth Jones - Data"
+		global github 	"C:\Users\wb623442\OneDrive - WBG(1)\Documents\GitHub\GitHub-MockProject-jul22"
     }
 	
 	
 	* Set globals for sub-folders 
-	global data 	"${onedrive}/Data"
+	//global data 	"${onedrive}/Data"
+	global data 	"${onedrive}"
 	global code 	"${github}/Stata/Code"
 	global outputs 	"${github}/Stata/Outputs/"
 
