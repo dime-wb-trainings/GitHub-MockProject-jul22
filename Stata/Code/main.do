@@ -25,7 +25,7 @@
 	
 	if "`c(username)'" == "wb628619" {
         global onedrive ""
-		global github 	"C:\Users\wb628619\Documents\GitHub\GitHub-MockProject-jul22\Stata\Code"
+		global github 	"C:\Users\wb628619\Documents\GitHub\GitHub-MockProject-jul22"
     }
 	
 	
