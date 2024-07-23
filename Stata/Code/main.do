@@ -11,7 +11,7 @@
         global onedrive "C:/Users/wb558768/WBG/Maria Ruth Jones - GitHub-Workflow-training"
 		global github 	"C:/Users/wb558768/Documents/GitHub/GitHub-MockProject-jul22"
     }
-	
+		
 	// User 2 
 	di "`c(username)'" 	//Check username and copy to set project globals by user
 	
@@ -23,12 +23,11 @@
 	// User: you 
 	di "`c(username)'" 	//Check username and copy to set project globals by user
 	
-	if "`c(username)'" == "" {
-        global onedrive ""
-		global github 	""
+	if "`c(username)'" == "wb592581" {
+        global onedrive "C:\Users\wb592581\OneDrive - WBG\Training"
+		global github 	"C:\Users\wb592581\OneDrive - WBG\Documents\diegopaal\Training\GitHub-MockProject-jul22"
     }
-	
-	
+		
 	* Set globals for sub-folders 
 	global data 	"${onedrive}/Data"
 	global code 	"${github}/Stata/Code"
@@ -36,6 +35,7 @@
 
 
 	* Install packages 
+	sysdir set PLUS "${code}/ado"
 	local user_commands	ietoolkit iefieldkit winsor sumstats estout //Add required user-written commands
 
 	foreach command of local user_commands {
