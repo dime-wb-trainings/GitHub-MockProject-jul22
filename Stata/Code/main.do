@@ -23,9 +23,9 @@
 	// User: you 
 	di "`c(username)'" 	//Check username and copy to set project globals by user
 	
-	if "`c(username)'" == "" {
+	if "`c(username)'" == "wb628619" {
         global onedrive ""
-		global github 	""
+		global github 	"C:\Users\wb628619\Documents\GitHub\GitHub-MockProject-jul22\Stata\Code"
     }
 	
 	
@@ -36,6 +36,7 @@
 
 
 	* Install packages 
+	sysdir set PLUS "${code}/ado"
 	local user_commands	ietoolkit iefieldkit winsor sumstats estout //Add required user-written commands
 
 	foreach command of local user_commands {
