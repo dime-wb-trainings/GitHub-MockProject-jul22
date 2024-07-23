@@ -36,6 +36,7 @@
 
 
 	* Install packages 
+	sysdir set PLUS "${code}/ado"
 	local user_commands	ietoolkit iefieldkit winsor sumstats estout //Add required user-written commands
 
 	foreach command of local user_commands {
