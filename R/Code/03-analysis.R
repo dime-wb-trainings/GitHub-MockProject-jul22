@@ -35,11 +35,10 @@ sum_vars <- c("profits_usd_w", "edu_high", "women_workers")
 ALB_ES_constructed %>%
   group_by(region) %>%
   summarise(across(all_of(sum_vars), list(mean = mean, median = median, sd = sd, min = min, max = max, n = ~sum(!is.na(.))))) %>%
-  writexl::write_xlsx(path = here(
+  write.csv(here(
     "Outputs",
     "Tables",
-    "summary-stats-2.xlsx"
-  ))
+    "summary-stats-2.csv"), row.names = FALSE)
 
 # Part 2: Balance tables ----
 
@@ -137,5 +136,5 @@ combined_figure <- ggarrange(profits_region_manager, two_way_kernel,
                     ncol = 1, nrow = 2)
 
 # save plot
-ggsave("Figure1.jpg", plot = combined_figure, path = here("Outputs", "Figures"))
+ggsave("graph-1.jpg", plot = combined_figure, path = here("Outputs", "Figures"))
 
